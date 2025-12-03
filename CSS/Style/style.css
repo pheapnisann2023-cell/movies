@@ -1,0 +1,26 @@
+.caption{
+    width: 400px;
+    height: 60px;
+    background-color: bisque;
+    border-radius: 0px 25px 15px 15px; 
+    color: rgb(51, 203, 208);
+    font-size: 50px;
+    font-weight: bold;
+}
+.feild{
+    width: 1000px;
+    height: auto;
+    background-color: rgb(128, 255, 213);
+    text-align: center;
+}
+.form{
+    width: 300px; 
+    height: auto;
+    text-align: justify; 
+}
+.text{
+    display: flex; 
+    justify-content: center; 
+    gap: 50px; 
+    text-align: center;
+}

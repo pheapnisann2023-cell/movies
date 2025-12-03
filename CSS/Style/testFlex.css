@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header1{
+    background-color: black;
+    color: aliceblue; 
+    text-align: center;
+    font-size: 25px; 
+    border-top-left-radius: 50px ;
+    margin: 10px;
+    padding: 20px;
+}
+.tester{
+    width: 450px;
+    height: 270px; 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 50px 0px 50px 0px;
+    border: 1px solid;
+    margin: 20px;
+    overflow: hidden;
+}
+.test{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+img{
+    width: 97px;
+    height: 80px;
+    border-radius: 3px;
+}
+.box{
+    width: 100px;
+    height: 130px;
+    border: 1px solid ;
+    margin: 5px;
+    border-radius: 3px;
+}
+.header2{
+    color: aliceblue;
+    background-color: gray;
+    text-align: center;
+    font-size: 27px;
+    margin: 19px;
+    padding: 25px;
+    border-top-left-radius: 50px;
+}
+.tester2{
+    width: 450px;
+    height: 270px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 50px 0px 50px;
+    margin: 25px;
+    overflow: hidden;
+}
