@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style/Home/navbar.css">
+    <link rel="stylesheet" href="../style/Home/slideAnimation.css">
+    <link rel="stylesheet" href="../style/Home/scroll.css">
+    <link rel="stylesheet" href="../style/Home/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon"
+        href="data:image/jpeg;base64,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">
+</head>
+<body>
+    <!--navbar-->
+    <header>
+        <!--logo-->
+        <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                <g fill="none">
+                    <path fill="#deeeff"
+                        d="M24 47.997c13.255 0 24-10.745 24-24c0-13.254-10.745-24-24-24s-24 10.746-24 24c0 13.255 10.745 24 24 24" />
+                    <path fill="#2e3ecd"
+                        d="M10.036 10.906v26.182h27.927V10.906zm3.491 24.437h-1.745v-1.746h1.745zm0-3.491h-1.745v-1.746h1.745zm0-3.491h-1.745v-1.746h1.745zm0-3.491h-1.745v-1.746h1.745zm0-3.491h-1.745v-1.745h1.745zm0-3.491h-1.745v-1.745h1.745zm0-3.49h-1.745v-1.746h1.745zm22.69 20.945h-1.745v-1.746h1.746zm0-3.491h-1.745v-1.746h1.746zm0-3.491h-1.745v-1.746h1.746zm0-3.491h-1.745v-1.746h1.746zm0-3.491h-1.745v-1.745h1.746zm0-3.491h-1.745v-1.745h1.746zm0-3.49h-1.745v-1.746h1.746z" />
+                    <path fill="#6bafff"
+                        d="M32.727 32.288H15.273v4.8h17.454zm0-21.382H15.273v4.8h17.454zm0 7.419H15.273V29.67h17.454z" />
+                </g>
+            </svg>
+        </a>
+        <!--navigation-->
+        <nav>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a>
+                <ul class="dropdown">
+                    <li><a href="#newmovie">NewMovie</a></li>
+                    <li><a href="#cdrama">CDrama</a></li>
+                    <li><a href="#KDrama">KDrama</a></li>
+                    <li><a href="#Anime">Anime</a></li>
+                    <li><a href="#Funny">Funny</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24">
+                        <path fill="#284eee"
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2m0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6m0 14c-2.03 0-4.43-.82-6.14-2.88a9.95 9.95 0 0 1 12.28 0C16.43 19.18 14.03 20 12 20" />
+                    </svg>
+                </a>
+            </li>
+        </nav>
+    </header>
+
+    <main>
+        <!--slide Animation-->
+        <section class="animation">
+            <div class="slide">
+                <img src="../image/pic5.jpg" alt="img1">
+            </div>
+            <div class="slide">
+                <img src="../image/pic6.jpg" alt="img2">
+            </div>
+            <div class="slide">
+                <img src="../image/pic9.gif" alt="img3">
+            </div>
+            <div class="slide">
+                <img src="../image/pic10.jpg" alt="img4">
+            </div>
+        </section>
+
+        <!--scrolling-->
+        <section class="container-movie">
+            <h1 id="newmovie">New Movie</h1>
+            <div class="movie-scroll">
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/pic14.jpg" alt="">
+                        <div class="ep">Ep10</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/pic15.jpg" alt="">
+                        <div class="ep">Ep20</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/pic16.jpg" alt="">
+                        <div class="ep">Ep30</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/pic17.jpg" alt="">
+                        <div class="ep">Ep35</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/pic18.jpg" alt="">
+                        <div class="ep">Ep40</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/pic19.jpg" alt="">
+                        <div class="ep">Ep42</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/anime2.jpg" alt="">
+                        <div class="ep">Ep45</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/anime3.jpg" alt="">
+                        <div class="ep">Ep50</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/anime4.jpg" alt="">
+                        <div class="ep">Ep55</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/anime5.jpg" alt="">
+                        <div class="ep">Ep59</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/anime6.jpg" alt="">
+                        <div class="ep">Ep60</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/Ft2.jpg" alt="">
+                        <div class="ep">Ep65</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/Ft3.jpg" alt="">
+                        <div class="ep">Ep20</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/Ft5.jpg" alt="">
+                        <div class="ep">Ep18</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/kdrama2.jpg" alt="">
+                        <div class="ep">Ep18</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/kdrama3.jpg" alt="">
+                        <div class="ep">Ep18</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/kdrama4.jpg" alt="">
+                        <div class="ep">Ep18</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/kdrama5.jpg" alt="">
+                        <div class="ep">Ep18</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/kdrama6.jpg" alt="">
+                        <div class="ep">Ep18</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="container-movie">
+            <h1 id="cdrama">CDrama</h1>
+            <div class="movie-scroll">
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/pic12.jpg" alt="">
+                        <div class="ep">Ep10</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/pic12.jpg" alt="">
+                        <div class="ep">Ep20</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/pic12.jpg" alt="">
+                        <div class="ep">Ep30</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/pic12.jpg" alt="">
+                        <div class="ep">Ep35</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/pic12.jpg" alt="">
+                        <div class="ep">Ep40</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/pic12.jpg" alt="">
+                        <div class="ep">Ep42</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/pic12.jpg" alt="">
+                        <div class="ep">Ep45</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/pic12.jpg" alt="">
+                        <div class="ep">Ep50</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/pic12.jpg" alt="">
+                        <div class="ep">Ep55</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/pic12.jpg" alt="">
+                        <div class="ep">Ep59</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/pic12.jpg" alt="">
+                        <div class="ep">Ep60</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/pic12.jpg" alt="">
+                        <div class="ep">Ep65</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/pic12.jpg" alt="">
+                        <div class="ep">Ep20</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/pic12.jpg" alt="">
+                        <div class="ep">Ep18</div>
+                        <div class="text">Mulan</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="container-movie">
+            <h1 id="KDrama">K-drama</h1>
+            <div class="movie-scroll">
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/kdrama.jpg" alt="">
+                        <div class="ep">Ep10</div>
+                        <div class="text">My Demon</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/kdrama.jpg" alt="">
+                        <div class="ep">Ep20</div>
+                        <div class="text">My Demon</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/kdrama.jpg" alt="">
+                        <div class="ep">Ep30</div>
+                        <div class="text">My Demon</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/kdrama.jpg" alt="">
+                        <div class="ep">Ep35</div>
+                        <div class="text">My Demon</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/kdrama.jpg" alt="">
+                        <div class="ep">Ep40</div>
+                        <div class="text">My Demon</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/kdrama.jpg" alt="">
+                        <div class="ep">Ep42</div>
+                        <div class="text">My Demon</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/kdrama.jpg" alt="">
+                        <div class="ep">Ep45</div>
+                        <div class="text">My Demon</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/kdrama.jpg" alt="">
+                        <div class="ep">Ep50</div>
+                        <div class="text">My Demon</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/kdrama.jpg" alt="">
+                        <div class="ep">Ep55</div>
+                        <div class="text">My Demon</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/kdrama.jpg" alt="">
+                        <div class="ep">Ep55</div>
+                        <div class="text">My Demon</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/kdrama.jpg" alt="">
+                        <div class="ep">Ep60</div>
+                        <div class="text">My Demon</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/kdrama.jpg" alt="">
+                        <div class="ep">Ep63</div>
+                        <div class="text">My Demon</div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="container-movie">
+            <h1 id="Anime">Anime</h1>
+            <div class="movie-scroll">
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/anime12.jpg" alt="">
+                        <div class="ep">Ep10</div>
+                        <div class="text">91Days</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/anime12.jpg" alt="">
+                        <div class="ep">Ep20</div>
+                        <div class="text">91Days</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/anime12.jpg" alt="">
+                        <div class="ep">Ep30</div>
+                        <div class="text">91Days</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/anime12.jpg" alt="">
+                        <div class="ep">Ep35</div>
+                        <div class="text">91Days</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/anime12.jpg" alt="">
+                        <div class="ep">Ep37</div>
+                        <div class="text">91Days</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/anime12.jpg" alt="">
+                        <div class="ep">Ep40</div>
+                        <div class="text">91Days</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/anime12.jpg" alt="">
+                        <div class="ep">Ep45</div>
+                        <div class="text">91Days</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/anime12.jpg" alt="">
+                        <div class="ep">Ep50</div>
+                        <div class="text">91Days</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/anime12.jpg" alt="">
+                        <div class="ep">Ep55</div>
+                        <div class="text">91Days</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/anime12.jpg" alt="">
+                        <div class="ep">Ep50</div>
+                        <div class="text">91Days</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="container-movie">
+            <h1 id="Funny">Funny</h1>
+            <div class="movie-scroll">
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/Ft2.jpg" alt="">
+                        <div class="ep">Ep10</div>
+                        <div class="text">Brave</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/Ft2.jpg" alt="">
+                        <div class="ep">Ep20</div>
+                        <div class="text">Brave</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/Ft2.jpg" alt="">
+                        <div class="ep">Ep20</div>
+                        <div class="text">Brave</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/Ft2.jpg" alt="">
+                        <div class="ep">Ep30</div>
+                        <div class="text">Brave</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/Ft2.jpg" alt="">
+                        <div class="ep">Ep40</div>
+                        <div class="text">Brave</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/Ft2.jpg" alt="">
+                        <div class="ep">Ep50</div>
+                        <div class="text">Brave</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/Ft2.jpg" alt="">
+                        <div class="ep">Ep60</div>
+                        <div class="text">Brave</div>
+                    </div>
+                </a>
+
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/Ft2.jpg" alt="">
+                        <div class="ep">Ep70</div>
+                        <div class="text">Brave</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/Ft2.jpg" alt="">
+                        <div class="ep">Ep80</div>
+                        <div class="text">Brave</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/Ft2.jpg" alt="">
+                        <div class="ep">Ep90</div>
+                        <div class="text">Brave</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/Ft2.jpg" alt="">
+                        <div class="ep">Ep100</div>
+                        <div class="text">Brave</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/Ft2.jpg" alt="">
+                        <div class="ep">Ep104</div>
+                        <div class="text">Brave</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/Ft2.jpg" alt="">
+                        <div class="ep">Ep105</div>
+                        <div class="text">Brave</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/Ft2.jpg" alt="">
+                        <div class="ep">Ep106</div>
+                        <div class="text">Brave</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/Ft2.jpg" alt="">
+                        <div class="ep">Ep107</div>
+                        <div class="text">Brave</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/Ft2.jpg" alt="">
+                        <div class="ep">Ep108</div>
+                        <div class="text">Brave</div>
+                    </div>
+                </a>
+                <a href="../Page/detailCard.html" class="class-link">
+                    <div class="card">
+                        <img src="../image/Ft2.jpg" alt="">
+                        <div class="ep">Ep109</div>
+                        <div class="text">Brave</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!--footer-->
+    <footer class="footer-movie">
+        <div class="footer-container">
+            <div class="col">
+                <h3>Top Movie</h3>
+                <a href="#">Trainding Movie</a>
+                <a href="#">Top Rated</a>
+                <a href="#">New Releases</a>
+                <a href="#">Upcoming Movies</a>
+            </div>
+            <div class="col">
+                <h3>Top Athors</h3>
+                <a href="#">Popular Athors</a>
+                <a href="#">Top Directors</a>
+                <a href="#">New Stars</a>
+                <a href="#">Trianding Celebrities</a>
+            </div>
+            <div class="col">
+                <h3>Join Us</h3>
+                <a href="#">Contact Us</a>
+                <a href="#">Community</a>
+                <a href="#">Subscribe</a>
+            </div>
+        </div>
+        <div class="footer-buttom">
+            <div class="icon">
+                <a href="https://web.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com%3Fhl%3Den-US&ec=GBRA8wE"><i class="fa-brands fa-square-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+            </div>
+        </div>
+        <p>© 2025 NisanOriginal. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

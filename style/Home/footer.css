@@ -1,0 +1,40 @@
+.footer-movie{
+    background-color: rgb(246, 94, 94);
+    color: black;
+    padding: 20px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.footer-container{
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+}
+.col{
+    display: grid;
+}
+.col a{
+    text-decoration: none;
+    color: white;
+}
+.col a:hover{
+    color: blue;
+}
+.footer-buttom{
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.icon a{
+    font-size: 27px;
+    padding: 15px;
+}
+.icon a:hover{
+    color: brown;
+}
+p{
+    padding: 20px;
+    text-align: center;
+}
