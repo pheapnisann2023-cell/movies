@@ -11,13 +11,15 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 0px 10px;
     border-top: 1px solid black;
     border-radius: 2px;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 999;
 }
-nav{
+header nav{
     display: flex;
 }
 nav li{
