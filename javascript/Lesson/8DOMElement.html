@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <h1 id="text1">Hello guy</h1>
+    <p class="p1">Programing whit JavaScript</p>
+    <input type="button" id="btnClick" value="Click Me">
+    <script>
+        // dom read update remi 
+        let text= document.getElementById("text1");
+        console.log(text);
+        // read contain
+        console.log(text.textContent);
+        // inner or update
+        text.innerHTML="Hello everyone"
+
+        //className(HTMLColection)
+        let p=document.getElementsByClassName("p1")
+        console.log(p);
+        console.log(p.textContent);
+        
+        let click=document.getElementById("btnClick")
+        click.style.color="blue"
+        
+        
+    </script>
+</body>
+</html>

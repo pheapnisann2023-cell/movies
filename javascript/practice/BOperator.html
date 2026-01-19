@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</head>
+<style>
+    .text-danger th{
+        color: red;
+    }
+</style>
+<body>
+    <script >
+        let code="E101",proName="ABC",qty=15,up=1.50;
+        let total1=qty*up,total2=(qty*up)*4100;
+        let code2="E102",proName2="Tiger",qty2=10,up2=1.60;
+        let Total1=qty2*up2,Total2=(qty2*up2)*4100;
+       document.write(`
+        <table class="table table-bordered  w-auto m-auto fs-3 text-center">
+            <thead class="text-danger table-info">
+                <tr>
+                    <th>Product Code</th>
+                    <th>Product Name</th>
+                    <th>Product Qty</th>
+                    <th>Unit Price</th>
+                    <th>Total $</th>
+                    <th>Total ៛</th>
+                </tr>
+            </thead>
+            <tbody class="fw-bold">
+                <tr>
+                    <td>${code}</td>
+                    <td>${proName}</td>
+                    <td>${qty}</td>
+                    <td>${up}</td>
+                    <td>${total1}$</td>
+                    <td>${total2}៛</td>
+                </tr>
+                <tr>
+                    <td>${code2}</td>
+                    <td>${proName2}</td>
+                    <td>${qty2}</td>
+                    <td>${up2}</td>
+                    <td>${Total1}$</td>
+                    <td>${Total2}៛</td>
+                </tr>
+            </tbody>
+        </table>
+    `);
+        
+
+    </script>
+</body>
+
+</html>

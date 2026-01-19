@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<style>
+    .h-img{
+        height: 500px;
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand-md bg-primary">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand text-white fs-5 fw-bold">Phone Shop</a>
+            <button type="button" class="navbar-toggler btn btn-outline-danger" data-bs-toggle="collapse"
+                data-bs-target="#data">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse d-md-flex justify-content-md-center align-content-md-center" id="data">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white fs-4">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-white fs-4"
+                            data-bs-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu fs-5">
+                            <li><a href="#" class="dropdown-item">Smart Phones</a></li>
+                            <li><a href="#" class="dropdown-item">Tablets</a></li>
+                            <li><a href="#" class="dropdown-item">Smart Watchs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-white fs-4"
+                            data-bs-toggle="dropdown">Accessories</a>
+                        <ul class="dropdown-menu fs-5">
+                            <li><a href="#" class="dropdown-item">Phone Case</a></li>
+                            <li><a href="#" class="dropdown-item">Screen</a></li>
+                            <li><a href="#" class="dropdown-item">Charger</a></li>
+                            <li><a href="#" class="dropdown-item">Power Bank</a></li>
+                            <li><a href="#" class="dropdown-item">Earphone/Headphone</a></li>
+                            <li><a href="#" class="dropdown-item">Speaker</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-white fs-4"
+                            data-bs-toggle="dropdown">Service</a>
+                        <ul class="dropdown-menu fs-5">
+                            <li><a href="#" class="dropdown-item">Phone Repair</a></li>
+                            <li><a href="#" class="dropdown-item">Screen Replacement</a></li>
+                            <li><a href="#" class="dropdown-item">Battery Replacement</a></li>
+                            <li><a href="#" class="dropdown-item">Unlock Phone</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-white fs-4">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex gap-3">
+                    <input type="text" placeholder="search" class="form-control">
+                    <button type="button" class="btn btn-outline-warning">search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- slide -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://i.pinimg.com/1200x/4c/33/f7/4c33f7d616be27878c3aba8492baaa88.jpg" class="d-block w-100 h-img" alt="pic1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/736x/9a/42/b4/9a42b44233c9cfcdbb43a8e13c8a818c.jpg" class="d-block w-100 h-img" alt="pic2">
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.pinimg.com/1200x/56/28/dc/5628dc38ac49b82bd9b6bd59328b19d4.jpg" class="d-block w-100 h-img" alt="pic3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- card -->
+     <div class="container-fluid">
+        <!-- row -->
+        <div class="row">
+            <!-- col1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <!-- card1 -->
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/ac/df/7e/acdf7eb60e5d72b8120be562ddf474b0.jpg"
+                        class="card-img-top" alt="charger">
+                    <div class="card-body bg-info">
+                        <h2 class="card-title">$4</h2>
+                        <p class="card-text">Charger</p>
+                        <a href="#" class="btn btn-outline-success">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <!-- card1 -->
+                <div class="card">
+                    <img src="https://i.pinimg.com/1200x/c0/93/75/c093751ed6d4b1126ac79ca1984c3ae7.jpg"
+                        class="card-img-top" alt="charger">
+                    <div class="card-body bg-info">
+                        <h2 class="card-title">$10</h2>
+                        <p class="card-text">HeadPhone</p>
+                        <a href="#" class="btn btn-outline-success">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <!-- card1 -->
+                <div class="card">
+                    <img src="https://i.pinimg.com/1200x/b1/2f/34/b12f34cac926516187a829090f17ffb8.jpg"
+                        class="card-img-top" alt="charger">
+                    <div class="card-body bg-info">
+                        <h2 class="card-title">$13</h2>
+                        <p class="card-text">Charger</p>
+                        <a href="#" class="btn btn-outline-success">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <!-- card1 -->
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/6f/24/bf/6f24bf8d9f5546cad399d3cfdccdbac7.jpg"
+                        class="card-img-top" alt="charger">
+                    <div class="card-body bg-info">
+                        <h2 class="card-title">$13</h2>
+                        <p class="card-text">Powerbank</p>
+                        <a href="#" class="btn btn-outline-success">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <!-- card1 -->
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/6f/24/bf/6f24bf8d9f5546cad399d3cfdccdbac7.jpg"
+                        class="card-img-top" alt="charger">
+                    <div class="card-body bg-info">
+                        <h2 class="card-title">$13</h2>
+                        <p class="card-text">Powerbank</p>
+                        <a href="#" class="btn btn-outline-success">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <!-- card1 -->
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/6f/24/bf/6f24bf8d9f5546cad399d3cfdccdbac7.jpg"
+                        class="card-img-top" alt="Powerbank">
+                    <div class="card-body bg-info">
+                        <h2 class="card-title">$13</h2>
+                        <p class="card-text">Powerbank</p>
+                        <a href="#" class="btn btn-outline-success">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <!-- card1 -->
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/6f/24/bf/6f24bf8d9f5546cad399d3cfdccdbac7.jpg"
+                        class="card-img-top" alt="charger">
+                    <div class="card-body bg-info">
+                        <h2 class="card-title">$13</h2>
+                        <p class="card-text">Powerbank</p>
+                        <a href="#" class="btn btn-outline-success">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <!-- card1 -->
+                <div class="card">
+                    <img src="https://i.pinimg.com/736x/6f/24/bf/6f24bf8d9f5546cad399d3cfdccdbac7.jpg"
+                        class="card-img-top" alt="charger">
+                    <div class="card-body bg-info">
+                        <h2 class="card-title">$13</h2>
+                        <p class="card-text">Powerbank</p>
+                        <a href="#" class="btn btn-outline-success">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

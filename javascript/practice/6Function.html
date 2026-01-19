@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function odd(num) {
+            let sum = 0;
+            let n = ""
+            for (let i = 0; i <= num; i++) {
+                if (i % 2 != 0) {
+                    sum += i
+                    if (n != "") {
+                        n += "+"
+                    }
+                    n += i
+                }
+            }
+            return "Odd number "+ n + "=" + sum
+        }
+        function even(num) {
+            let sum = 0;
+            let n = ""
+            for (let i = 1; i <= num; i++) {
+                if (i % 2 == 0) {
+                    sum += i
+                    if (n != "") {
+                        n += "+"
+                    }
+                    n += i
+                }
+                
+            }
+            return "Even number "+ n + "=" + sum
+        }
+        document.write(odd(10) + "<br>")
+        document.write(even(10) + "<br>")
+    </script>
+</body>
+
+</html>

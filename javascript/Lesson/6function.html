@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //userDefineFunc 
+        // nonReturn,no param
+        function greeting(){
+            document.write("Hello world" +"<br>")
+        }
+        function sum(a,b) {
+            document.write(a + "+" + b +"="+(a+b)+"<br>")   
+        }
+        function cal1(val1,val2) {
+            return val1+val2
+        }
+        function cal2() {
+            let x=10,y=10.50
+            return x/y 
+        }
+        function info(name,age,gender,address) {
+            document.write("======Information======"+"<br>")
+            document.write("Name:"+name+"<br>");
+            document.write("Age:"+age+"<br>");
+            document.write("Gender:"+gender+"<br>");
+            document.write("Address:"+address+"<br>");
+        }
+        function product() {
+            let code,proName,qty,price,total;
+            document.write("Code:"+code+"<br>")
+        }
+
+        greeting();
+        sum(10,20);
+        document.write(cal1(30,20)+"<br>");
+        info("Sok Pisey",20,"Female","Phnom Penh");
+    </script>
+</body>
+</html>

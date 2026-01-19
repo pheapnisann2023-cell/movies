@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+<body>
+    <script>
+        // Method of array
+        let numbers=[10,20,40,50,30,90]
+        
+        // built in func/method
+        console.log(numbers.length);
+        console.log(numbers);
+
+        // pop : remove last element of array
+        numbers.pop();
+        console.log("pop", numbers);
+
+        // push : add last element of arr 
+        numbers.push(75);
+        console.log("push",numbers);
+        
+        // shift : remove the first element
+        numbers.shift();
+        console.log("Shift",numbers);
+
+        // unshift : add first element of array
+        numbers.unshift(40);
+        console.log("after shift :"+numbers);
+
+        // include: find element in array (result : true false)
+        console.log("after include :"+numbers.includes(12));
+
+        // indexof : search index of element (result : index if true,false=-1)
+        console.log("indexof :",numbers.indexOf(60));
+        
+    </script>
+</body>
+</html>

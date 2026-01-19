@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // dec arr
+        let seat=[
+            ["C1","C2","C3","C4","C5"],
+            ["B1","B2","B3","B4","B5"],
+            ["A1","A2","A3","A4","A5"]
+        ];
+        let chose =parseInt(prompt("How many chair you want to chose?:"));
+        // func
+        function display() {
+            document.write("-------SCREEN-------"+"<br>")
+            
+            for(let row=0; row<3; row++){
+                for(let i=0; i<5; i++){
+                    document.write(seat[row][i]+" ");
+                }
+                document.write("<br>");
+            }
+        }
+        
+        let choice;
+        let check=0;
+        choice=prompt("Enter your chair:");
+        
+        for(let row=0; row<3; row++){
+            for(let col=0; col<5; col++){
+                if (choice.toUpperCase()==seat[row][col]) {
+                    seat[row][col]="❤️"
+                    check=1;
+                    display();
+                }
+            }
+        }
+        if(check==0){
+            alert("Chair not found! Please chose your chair.");
+        }
+    </script>
+</body>
+</html>

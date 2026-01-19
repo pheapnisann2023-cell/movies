@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<style>
+    @media (min-width:576px) and (max-width:767px){
+        .bg-sm-blue{
+            background-color: blue !important;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+        } 
+    }
+    @media (min-width:768px) and (max-width:991px){
+        .bg-md-black{
+            background-color: black !important;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+    @media (min-width:992px) and (max-width:1199px){
+       .bg-lg-red{
+            background-color: red !important;
+            color: blue;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+        } 
+    }
+    @media (min-width:1200px) and (max-width:1399px){
+         .bg-xl-yellow{
+            background-color: yellow !important;
+            color: black;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+    @media (min-width:1400px){
+        .bg-xxl-gray{
+            background-color: gray !important;
+            color: yellow;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+</style>
+<body>
+    <div class="container-fluid bg-info bg-sm-blue bg-md-black bg-lg-red bg-xl-yellow bg-xxl-gray">Hello Guy</div>
+</body>
+</html>

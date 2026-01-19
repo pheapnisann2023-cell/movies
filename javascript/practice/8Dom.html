@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="greeting">Hello world</div>
+    <h1 class="head1">Welcome to Js</h1>
+    <h1 class="head2">Lern DOM Manipulation</h1>
+    <h1 class="head3">Practice Make Perfect</h1>
+
+    <script>
+        console.log("1 with id");
+        let text=document.getElementById("greeting");
+        console.log(text.textContent);
+        text.innerHTML="Hello Student";
+
+        text.style.fontSize="25px"
+        text.style.backgroundColor="purple"
+        text.style.color="white"
+        text.style.width="300px"
+        text.style.height="80px"
+        text.style.textAlign="center"
+        text.style.margin="auto"
+
+        console.log("2 with className");
+        let head1=document.getElementsByClassName("head1")[0];
+        console.log(head1.textContent);
+        let head2=document.getElementsByClassName("head2")[0];
+        console.log(head2.textContent);
+        head2.innerHTML="DOM is fun"
+        let head3=document.getElementsByClassName("head3")[0];
+        console.log(head3.textContent);
+        head3.innerHTML="green"
+
+        console.log("3 with tags");
+        let tag=document.getElementsByTagName("h1")
+        for(let i=0; i<tag.length; i++){
+            console.log(tag[i].textContent);
+            tag[i].style.color="blue"
+        }
+        
+        console.log("4 with query");
+        let query1=document.querySelector("h1");
+        query1.textContent="Hello Javascript"
+        query1.style.color="red"
+        query1.style.textAlign="center"
+
+        let qAll=document.querySelectorAll("h1");
+        for(let h1 of qAll){
+            h1.textContent +=" (Updated)";
+        }
+        
+
+        let newH1 = document.createElement("h1");
+        newH1.innerHTML="New heading"
+        document.body.appendChild(newH1)
+
+        let removes=document.getElementsByTagName("h1");
+        if(removes.length>0){
+            removes[removes.length-1].remove();
+            document.write("The last element removed")
+        }
+
+        
+    </script>
+</body>
+</html>

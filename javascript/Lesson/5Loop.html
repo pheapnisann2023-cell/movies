@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //for loop
+        document.write("For Loop"+"<br>")
+        for(let i=0; i<5; i++){
+            document.write(i+"<br>")
+        }
+        
+        document.write("While Loop" +"<br>")
+        let j=0;
+        while(j<5){
+            document.write(j+"<br>")
+            j++;
+        }
+        //do while
+        document.write("do while Loop" +"<br>")
+        let k=2;
+        do {
+            document.write("Hello" +"<br>")
+            k++;
+        } while (k>5);
+        // for in (use with object)
+        document.write("<h4>For in</h4>")
+        const person={
+            Name :"Sok Pisey",
+            Age:20,
+            Gender:"Female",
+        }
+        for (const p in person) {
+            document.write(p+" : "+ person[p]+"<br>")
+        }
+
+        // for of (use for loop array only value)
+        document.write("<h4>For of</h4>")
+        const name=["Reaksa","Leakna","Pisey","Dara","Sombath"]
+        for (i of name) {
+            document.write(i+"<br>")
+        }
+
+        // for each(use for loop array and index of array)
+        name.forEach((Name,i) => {
+            document.write(i+1+" : "+Name+"<br>")
+        });
+    </script>
+</body>
+</html>
